@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "eb14c125-6473-4b1a-97db-b296ee7e605d",
+		"name": "gallery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gallery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/galleries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"galleries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gallery",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "my_images",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "images",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "my_images",
+							"type": "text"
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": [
+								"/C:/Users/masrk/Downloads/picture.png"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/galleries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"galleries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
