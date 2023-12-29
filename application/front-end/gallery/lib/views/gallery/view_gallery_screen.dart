@@ -46,12 +46,20 @@ class _ViewGalleryScreenState extends State<ViewGalleryScreen> {
         }),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue,
         onPressed: () async {
           Get.to(() => AddGalleryScreen());
         },
-        label: const Text("Add Picture"),
-        icon: const Icon(Icons.account_circle),
+        label: const Text(
+          'Add Picture',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        icon: const Icon(
+          Icons.image,
+          color: Colors.white,
+        ),
       ),
     );
   }
