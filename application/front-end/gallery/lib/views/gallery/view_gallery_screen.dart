@@ -39,14 +39,14 @@ class _ViewGalleryScreenState extends State<ViewGalleryScreen> {
             return Container(
               child: Center(
                 child: CircularProgressIndicator(
-                  color: Colors.blueAccent,
+                  color: Colors.black,
                 ),
               ),
             );
         }),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.black,
         onPressed: () async {
           Get.to(() => AddGalleryScreen());
         },

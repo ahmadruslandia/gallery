@@ -179,7 +179,7 @@ class _AddGalleryScreenState extends State<AddGalleryScreen> {
                   if (galleryController.isLoading.value)
                     return LoadingButton(
                       onClick: () async {},
-                      color: Colors.blue,
+                      color: Colors.black,
                       childWidget: Center(
                         child: CircularProgressIndicator(
                           backgroundColor: Colors.white,
@@ -191,7 +191,7 @@ class _AddGalleryScreenState extends State<AddGalleryScreen> {
                       onClick: () async {
                         galleryController.create();
                       },
-                      color: Colors.blue,
+                      color: Colors.black,
                       childWidget: Center(
                           child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,

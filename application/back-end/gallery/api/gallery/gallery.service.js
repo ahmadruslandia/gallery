@@ -13,7 +13,7 @@ module.exports = {
             result = fetchGalleryResult[0];
             for (var i in result) {
                 const fetchGalleryImageResult = await connection.query(
-                    `SELECT id,CONCAT('http://192.168.19.172:3000/upload/',image) as url
+                    `SELECT id,CONCAT('http://192.168.202.172:3000/upload/',image) as url
                     FROM gallery_image WHERE gallery_id = ?`, [result[i].id]
                 );
                 result[i]['images'] = fetchGalleryImageResult[0];
@@ -55,7 +55,7 @@ module.exports = {
                 FROM gallery WHERE id = ?`, [queryResult[0].insertId]
             );
             const images = await connection.query(
-                `SELECT id,CONCAT('http://192.168.19.172:3000/upload/',image) as url
+                `SELECT id,CONCAT('http://192.168.202.172:3000/upload/',image) as url
                 FROM gallery_image WHERE gallery_id = ?`, [queryResult[0].insertId]
             );
             await connection.commit();
